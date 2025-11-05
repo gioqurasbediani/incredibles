@@ -101,7 +101,7 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: url('hero.jpg') center/cover no-repeat;
+  background: url('images/hero.jpg') center/cover no-repeat;
   position: relative;
 }
 
