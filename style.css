@@ -74,4 +74,11 @@ nav ul li a{font-weight:600; font-size:1.2rem; text-transform:none; color:#fff; 
 footer{text-align:center; padding:40px 20px; background:#111; color:#D4AF37;}
 
 /* Animations */
-@keyframes fadeIn{0%{opacity:0; transform:translateY(20px);}100%{opacity
+@keyframes fadeIn{0%{opacity:0; transform:translateY(20px);}100%{opacity:1; transform:translateY(0);}}
+@keyframes fadeInUp{0%{opacity:0; transform:translateY(40px);}100%{opacity:1; transform:translateY(0);}}
+@keyframes fadeInRight{0%{opacity:0; transform:translateX(40px);}100%{opacity:1; transform:translateX(0);}}
+
+/* Responsive */
+@media(max-width:1200px){.hero-content h1{font-size:3.5rem;}.hero-content p{font-size:1.4rem;}}
+@media(max-width:900px){.hero-content h1{font-size:3rem;}.hero-content p{font-size:1.2rem;}.about-container{flex-direction:column;}.nav ul{gap:20px;}}
+@media(max-width:600px){.hero-content h1{font-size:2.5rem;}.hero-content p{font-size:1rem;}}
