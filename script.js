@@ -14,3 +14,17 @@ window.addEventListener('scroll', () => {
     header.classList.remove('shrink');
   }
 });
+
+function checkHeader() {
+  if(window.scrollY > 50){
+    header.classList.add('shrink');
+  } else {
+    header.classList.remove('shrink');
+  }
+}
+
+// Run on scroll
+window.addEventListener('scroll', checkHeader);
+
+// Run on page load
+window.addEventListener('load', checkHeader);
