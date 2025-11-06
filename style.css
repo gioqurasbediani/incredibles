@@ -50,10 +50,70 @@ nav ul li a{font-weight:600; font-size:1.2rem; text-transform:none; color:#fff; 
 .btn:hover{transform:scale(1.05);}
 
 /* About */
-.about-container{display:flex; align-items:center; justify-content:center; gap:60px; max-width:1200px; margin:auto; flex-wrap:wrap;}
-.about-text{flex:1 1 400px;}
-.about-image{flex:1 1 400px;}
-.about-image img{width:100%; border-radius:15px; animation:fadeInRight 1.5s ease forwards;}
+.about-container{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:80px; /* bigger spacing between text and image */
+  max-width:1200px;
+  margin:auto;
+  flex-wrap:wrap;
+}
+
+.about-text{
+  flex:1 1 500px;
+  text-align:left;
+  animation:fadeInLeft 1.5s ease forwards;
+}
+
+.about-text h2{
+  font-size:3rem; /* bigger heading */
+  margin-bottom:25px;
+  letter-spacing:2px;
+}
+
+.about-text p{
+  font-size:1.5rem; /* bigger paragraph */
+  line-height:1.8;
+  margin-bottom:40px;
+}
+
+/* Outline Button */
+.btn-outline{
+  display:inline-block;
+  padding:15px 40px;
+  font-weight:700;
+  font-size:1.2rem;
+  color:#D4AF37;
+  border:2px solid #D4AF37;
+  border-radius:8px;
+  transition: all 0.4s ease;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+.btn-outline:hover{
+  background:#D4AF37;
+  color:#000;
+  transform:scale(1.05);
+}
+
+/* Image Animation */
+.about-image img{
+  width:100%;
+  border-radius:20px;
+  animation:fadeInRight 1.5s ease forwards;
+}
+
+/* Animations */
+@keyframes fadeInLeft{
+  0%{opacity:0; transform:translateX(-40px);}
+  100%{opacity:1; transform:translateX(0);}
+}
+@keyframes fadeInRight{
+  0%{opacity:0; transform:translateX(40px);}
+  100%{opacity:1; transform:translateX(0);}
+}
 
 /* Services */
 .service-cards{display:flex; flex-wrap:wrap; justify-content:center; gap:30px;}
