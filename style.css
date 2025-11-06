@@ -4,8 +4,19 @@ body, html {font-family:'Montserrat', sans-serif; scroll-behavior:smooth; backgr
 h1,h2,h3{font-weight:700;}
 p{font-weight:400; line-height:1.6;}
 a{text-decoration:none;}
-.section{height:100vh; display:flex; justify-content:center; align-items:center; flex-direction:column; text-align:center; padding:0 20px; scroll-snap-align:start;}
-html{scroll-snap-type:y mandatory;}
+.section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  scroll-snap-align: start; /* full-screen snapping */
+  position: relative;
+  z-index: 1; /* ensures it sits above hero after */
+  padding: 80px 20px; /* spacing from top/bottom */
+  background: #000; /* default background to separate sections */
+}
+
 
 /* Header */
 #header {
